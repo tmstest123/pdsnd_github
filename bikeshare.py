@@ -66,7 +66,7 @@ def get_filters():
     return city, month, day
 
 
-def load_data(city, month, day):
+def load_csv_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -227,7 +227,7 @@ def main():
     print('Hello! Let\'s explore some US bikeshare data!')
     while True:
         city, month, day = get_filters()
-        df = load_data(city, month, day)
+        df = load_csv_data(city, month, day)
 
         time_stats(df)
         station_stats(df)
