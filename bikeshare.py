@@ -200,7 +200,7 @@ def display_raw_data(df):
         else:
             print("Invalid input. Please try it again.")
     
-    #User want's to see the raw data
+    #User wants to see the raw data
     i = 1
     for index, row in df.iterrows():
         print("+++++++++++{}+++++++++++".format(i))
