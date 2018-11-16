@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-import calendar
+import calendar as cal
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -110,7 +110,7 @@ def time_stats(df):
 
     # Display the most common month if month hasn't been restricted
     if len(df['_month'].unique()) > 1:
-        most_common_month = calendar.month_name[df['_month'].mode()[0]+1]
+        most_common_month = cal.month_name[df['_month'].mode()[0]+1]
         print("Most common month: {}".format(most_common_month))
 
     # Display the most common day of week
